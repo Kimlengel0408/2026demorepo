@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-
+    width, initial-scale=1.0">
+    <title>Module 1 Exercise 3</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; }
+        .container { display: flex; min-height:
+        100vh; align-items: stretch; }
+        .column { background: goldenrod; display:
+        flex; flex-direction: column; justify-content:
+        center; align-items: center; flex: 1; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column" id="column1">
+            <h1 id="heading1">Hello</h1>
+            <button type="button" id="btn1">Change Me</button>
+        </div>
+        <div class="column" id="column2">
+            <h1 id="heading2">World</h1>
+            <button type="button" id="btn2">Change Me</button>
+        </div>
+    </div>
+
+    <script>
+        const button1 = document.getElementById("btn1");
+        const button2 = document.getElementById("btn2");
+        function col1(){
+            document.getElementById("column1").style.backgroundColor = "Pink";
+            document.getElementById("column1").textContent="Changed to Pink";
+        };
+
+        function col2(){
+            document.getElementById("column2").style.backgroundColor = "Red";
+            document.getElementById("column2").textContent="Changed to Red";
+        };
+
+        button1.addEventListener('click', col1);
+        button2.addEventListener('click', col2);
+    </script>
+</body>
+</html>
