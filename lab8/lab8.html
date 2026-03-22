@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devils roll the dice, Angels rolls their eyes</title>
+</head>
+
+<body>
+
+    <h1> Please select a number of faces for your chosen dice. </h1>
+    <input id="diceFace" name="diceFace">
+    <button onclick="handleRoll()">Submit</button>
+
+    <h2 id="results"></h2>
+
+    <script>
+        function rollDie(faces) {
+            let result = Math.floor(Math.random() * faces) + 1;
+            document.getElementById("results").textContent = result;
+        }
+
+        function handleRoll() {
+            let value = document.getElementById("diceFace").value;
+            rollDie(Number(value));
+        }
+    </script>
+
+</body>
+
+</html>

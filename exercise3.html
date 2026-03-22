@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-
     width, initial-scale=1.0">
     <title>Module 1 Exercise 3</title>
-    <style>
-        body { font-family: sans-serif; margin: 0; }
-        .container { display: flex; min-height:
-        100vh; align-items: stretch; }
-        .column { background: goldenrod; display:
-        flex; flex-direction: column; justify-content:
-        center; align-items: center; flex: 1; }
-    </style>
+    <link rel="stylesheet" href="exercise3Extensions/index.css">
 </head>
+
 <body>
     <div class="container">
         <div class="column" id="column1">
@@ -26,21 +21,7 @@
         </div>
     </div>
 
-    <script>
-        const button1 = document.getElementById("btn1");
-        const button2 = document.getElementById("btn2");
-        function col1(){
-            document.getElementById("column1").style.backgroundColor = "Pink";
-            document.getElementById("column1").textContent="Changed to Pink";
-        };
-
-        function col2(){
-            document.getElementById("column2").style.backgroundColor = "Red";
-            document.getElementById("column2").textContent="Changed to Red";
-        };
-
-        button1.addEventListener('click', col1);
-        button2.addEventListener('click', col2);
-    </script>
+    <script src="exercise3Extensions/index.js" defer></script>
 </body>
+
 </html>

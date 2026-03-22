@@ -11,3 +11,10 @@ favoriteMovies.unshift('Inside Out');
 favoriteMovies.pop();
 
 console.log(favoriteMovies)
+
+//[favoriteMovies[0], favoriteMovies[3]] = [favoriteMovies[3], favoriteMovies[0]];
+let temp = favoriteMovies[3];
+favoriteMovies[3] = favoriteMovies [0];
+favoriteMovies[0] = temp;
+
+console.log(favoriteMovies);
